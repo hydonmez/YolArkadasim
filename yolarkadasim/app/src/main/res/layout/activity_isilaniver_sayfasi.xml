@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".isilaniverSayfasi"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#2196F3"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/hosgeldin_yazisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:includeFontPadding="false"
+            android:text="Yol arkaşını bul"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/aciklama_yazisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hosgeldin_yazisi"
+            android:layout_marginLeft="10dp"
+            android:includeFontPadding="false"
+            android:text="Yol arkaşını bulmak için ilanı ver ve arkadaşını bul"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalkış yeri :"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/isinadi_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kalkış Yerini Giriniz...."
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittextgorunumu"
+            android:padding="10dp"
+            android:minHeight="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Varış yeri :"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/varisisinadi_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Varış Yerini Giriniz...."
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittextgorunumu"
+            android:padding="10dp"
+            android:minHeight="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Açıklama : "
+            android:textColor="@color/design_default_color_primary_dark"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/aciklama_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Açıklamayı Giriniz...."
+            android:inputType="textCapSentences|textMultiLine"
+            android:minHeight="150dp"
+            android:padding="10dp"
+            android:gravity="top"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittextgorunumu"/>
+
+        <Button
+            android:id="@+id/isilaniverbutonu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="#2196F3"
+            android:text="ilan ver"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="isilaniverbutonu"/>
+    </LinearLayout>
+</LinearLayout>
